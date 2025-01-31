@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <label for="category-select">Select Category:</label>
+    <select id="category-select">
+        <option value="all">All Categories</option>
+        <option value="Compute Engine">Compute Engine</option>
+        <option value="Cloud VPC & Networking">ClouSd VPC & Networking</option>
+        <option value="Storage (Block, File, Object)">Storage (Block, File, Object)</option>
+        <option value="Databases & Messaging">Databases & Messaging</option>
+        <option value="Kubernetes Engine & Containers">Kubernetes Engine & Containers</option>
+        <option value="Serverless (Cloud Functions, Cloud Run, App Engine)">Serverless (Cloud Functions, Cloud Run, App Engine)</option>
+        <option value="IAM & Authentication">IAM & Authentication</option>
+        <option value="Operations & Monitoring">Operations & Monitoring</option>
+        <option value="Pricing & Cost Optimization">Pricing & Cost Optimization</option>
+        <option value="Security & Encryption">Security & Encryption</option>
+        <option value="CI/CD & Deployment">CI/CD & Deployment</option>
+        <option value="Uncategorized">Uncategorized</option>
+    </select>
+    <button id="show-questions">Show Questions</button>
+
+    <!-- Add a container for category squares -->
+    <div id="category-squares-container"></div>
+
+    <div id="questions-container"></div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
