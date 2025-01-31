@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event listener for the "Show Questions" button
     showQuestionsButton.addEventListener("click", function () {
+        questionsContainer.style.display = "block"; // Show the questions
+        categorySquaresContainer.style.display = "none";
         const selectedCategory = categorySelect.value;
         displayQuestions(selectedCategory);
     });
